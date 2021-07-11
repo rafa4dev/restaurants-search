@@ -22,7 +22,7 @@ const CardTitle = styled.span`
 const ImageCard = ({ photo, title }) =>  {
     const [imageLoaded, setImageLoaded] = useState(false);
     useEffect(() => {
-        const imageLoader = new Image();
+        const imageLoaded = new Image();
         imageLoaded.src = photo;
         imageLoaded.onLoad = () => setImageLoaded(true);
     }, [photo]);
