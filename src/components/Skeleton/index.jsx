@@ -19,4 +19,6 @@ const LoagingSkeleton = styled.div`
     animation: ${KeyFrameLoading} 500ms infinite alternate;
 `
 
-export default ({ width, height}) => <LoagingSkeleton width={width} height={height} />;
+const assignSkeleton = ({ width, height}) => <LoagingSkeleton width={width} height={height} />
+
+export default assignSkeleton;
